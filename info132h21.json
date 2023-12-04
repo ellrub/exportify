@@ -298,5 +298,305 @@
             "Mouse"
         ],
         "answer": "Mouse"
+    },
+    {
+        "question": "Når vi endrer verdien til en funksjonsparameter i kroppen til en funksjon, endres også den overførte argumentverdien?",
+        "options": [
+            "Nei, aldri",
+            "Ja, men ikke hvis endringen skjer ved tilordning til parametervariablen",
+            "Ja, hvis argumentet har globalt skop",
+            "Ja, uansett"
+        ],
+        "answer": "Ja, men ikke hvis endringen skjer ved tilordning til parametervariablen"
+    },
+    {
+        "question": "En Python variabel kan *ikke* inneholde",
+        "options": [
+            "Den kan inneholde alle disse",
+            "Et objekt",
+            "En verdi",
+            "En funksjon"
+        ],
+        "answer": "Den kan inneholde alle disse"
+    },
+    {
+        "question": "Det mest presise er å si at en Python-klasse kan definere",
+        "options": [
+            "Funksjoner og variabler",
+            "Funksjoner og attributter",
+            "Metoder og variabler",
+            "Metoder og attributter"
+        ],
+        "answer": "Metoder og attributter"
+    },
+    {
+        "question": "[[ bokstav + str(tall) for tall in [1, 2, 3]] for bokstav in ['A', 'B', 'C']]",
+        "options": [
+            "[['A1', 'B1', 'C1'], ['A2', 'B2', 'C2'], ['A3', 'B3', 'C3']]",
+            "[['A1', 'A2', 'A3'], ['B1', 'B2', 'C3'], ['C1', 'C2', 'C3']]",
+            "['A1', 'B1', 'C1'], ['A2', 'B2', 'C2'], ['A3', 'B3', 'C3']",
+            "['A1', 'B1', 'C1'], ['A2', 'B2', 'C2'], ['A3', 'B3', 'C3']"
+        ],
+        "answer": "[['A1', 'A2', 'A3'], ['B1', 'B2', 'C3'], ['C1', 'C2', 'C3']]"
+    },
+    {
+        "question": "[x % 3 for x in range(0, 21, 7)]",
+        "options": [
+            "[0, 7, 14]",
+            "[0, 7, 14, 21]",
+            "[0, 1, 2]",
+            "[1, 3, 5]"
+        ],
+        "answer": "[0, 1, 2]"
+    },
+    {
+        "question": "len(['løping', 'spinning', 'styrke']) og 9//3 er?",
+        "options": [
+            "Hverken ekvivalente eller identiske",
+            "Ekvivalente og kanskje identiske",
+            "Identiske, men ikke ekvivalente",
+            "Ekvivalente, men aldri identiske"
+        ],
+        "answer": "Ekvivalente og kanskje identiske"
+    },
+    {
+        "question": "l1 = ['løping', 'spinning', 'styrke']  \nl2 = l1[:]  \nNå er l1 og l2?",
+        "options": [
+            "Ekvivalente, men aldri identiske",
+            "Hverken ekvivalente eller identiske",
+            "Både ekvivalente og identiske",
+            "Ekvivalente, men neppe identiske"
+        ],
+        "answer": "Ekvivalente, men aldri identiske"
+    },
+    {
+        "question": "for x in open(filnavn, 'r'):",
+        "options": [
+            "Er en syntaxfeil",
+            "Leser hele filen inn i x og går en runde i løkke",
+            "Går i løkke gjennom filen tegn for tegn",
+            "Går i løkken gjennom filen linje for linje"
+        ],
+        "answer": "Går i løkken gjennom filen linje for linje"
+    },
+    {
+        "question": "'Kardemomme'[-2:-9:-3]",
+        "options": [
+            "''",
+            "ValueError: ...",
+            "'mmr'",
+            "'mea'"
+        ],
+        "answer": "'mmr'"
+    },
+    {
+        "question": "'mom' in 'Kardemomme'",
+        "options": [
+            "None",
+            "ValueError: ...",
+            "True",
+            "False"
+        ],
+        "answer": "True"
+    },
+    {
+        "question": "['A', 'B', 'C'].remove('B')",
+        "options": [
+            "ValueError: ...",
+            "'B'",
+            "None",
+            "['A', 'C']"
+        ],
+        "answer": "None"
+    },
+    {
+        "question": "def registrer(*deltagere):",
+        "options": [
+            "'*deltagere' er et parameternavn",
+            "deltagere er en opsjon med None som standardverdi",
+            "deltagere leses fra tastatur hvis nødvendig",
+            "deltagere er en sekvens av ukjent lengde"
+        ],
+        "answer": "deltagere er en sekvens av ukjent lengde"
+    },
+    {
+        "question": "```for i in range(1, 6, 2):  \n  if i%2 == 1:  \n    print(i**2, end='')",
+        "options": [
+            "1 9 25",
+            "1 6 2",
+            "9 25 49",
+            "1"
+        ],
+        "answer": "1 9 25"
+    },
+    {
+        "question": "I Python er dette: **2.71828**",
+        "options": [
+            "et heltall",
+            "en tegnstreng",
+            "en variabel",
+            "et desimaltall"
+        ],
+        "answer": "et desimaltall"
+    },
+    {
+        "question": "**x is y** vil si at **x** og **y** er",
+        "options": [
+            "Ekvivalente og ikke identiske",
+            "Ekvivalente, men ikke nødvendigvis identiske",
+            "Ekvivalente og identiske",
+            "Identiske, men ikke nødvendigvis ekvivalente"
+        ],
+        "answer": "Ekvivalente og identiske"
+    },
+    {
+        "question": "**x == y** vil si at **x** og **y** er",
+        "options": [
+            "Ekvivalente men ikke nødvendigvis identiske",
+            "Identiske, men ikke nødvendigvis ekvivalente",
+            "Ekvivalente og ikke identiske",
+            "Ekvivalente og identiske"
+        ],
+        "answer": "Ekvivalente men ikke nødvendigvis identiske"
+    },
+    {
+        "question": "type(lambda x: x*x)",
+        "options": [
+            "<class 'bultin_function_or_method'>",
+            "<class 'type'>",
+            "<class 'str'>",
+            "<class 'function'>"
+        ],
+        "answer": "<class 'function'>"
+    },
+    {
+        "question": "type(bool)",
+        "options": [
+            "Boolean",
+            "'bool'",
+            "<class 'type'>",
+            "<class 'bultin_function_or_method'>"
+        ],
+        "answer": "<class 'type'>"
+    },
+    {
+        "question": "eval('(lambda x: x // 2)(5)') returnerer",
+        "options": [
+            "2",
+            "SyntaxError: ...",
+            "'(lambda x: x // 2)(5)'",
+            "5"
+        ],
+        "answer": "2"
+    },
+    {
+        "question": ".grid() eller .pack()",
+        "options": [
+            ".grid() må kalles for all elementer i rammer",
+            ".pack() må kalles for alle elementer før de vises",
+            "En av dem (eller en lignende metode) må kalles før et element vises",
+            "Er i praksis valgfri for alle elementer"
+        ],
+        "answer": "En av dem (eller en lignende metode) må kalles før et element vises"
+    },
+    {
+        "question": "list({'aerobics': 2, 'løping': 4, 'yoga': 1}.items())[1]",
+        "options": [
+            "{'løping': 4}",
+            "('løping', 4)",
+            "4",
+            "Key error: 1"
+        ],
+        "answer": "('løping', 4)"
+    },
+    {
+        "question": "{'aerobics': 2, 'løping': 4, 'yoga': 1}['løping']",
+        "options": [
+            "Key error: 'løping'",
+            "('løping', 4)",
+            "{'løping': 4}",
+            "4"
+        ],
+        "answer": "4"
+    },
+    {
+        "question": "{'aerobics': 2, 'løping': 4, 'yoga': 1}[4]",
+        "options": [
+            "('løping', 2)",
+            "2",
+            "løping",
+            "Key error: '4'"
+        ],
+        "answer": "Key error: '4'"
+    },
+    {
+        "question": "sorted(['A', 'C', 'b', 'D'] == ['A', 'C', 'D', 'b'])",
+        "options": [
+            "ValueError: ...",
+            "False",
+            "True",
+            "SyntaxError: ..."
+        ],
+        "answer": "True"
+    },
+    {
+        "question": "['A', 'C', 'b', 'D'].sort() == ['A', 'C', 'D', 'b']",
+        "options": [
+            "True",
+            "ValueError: ...",
+            "False",
+            "SyntaxError: ..."
+        ],
+        "answer": "False"
+    },
+    {
+        "question": "fil.close()",
+        "options": [
+            "Kun tillatt for append og write",
+            "Kun nødvendig for append",
+            "Nødvendig for append og write",
+            "Kun nødvendig for write"
+        ],
+        "answer": "Nødvendig for append og write"
+    },
+    {
+        "question": "open(filnavn, 'w')",
+        "options": [
+            "Hvis filen ikke finnes gjøres unntak",
+            "Hvis filen finnes gjøres unntak",
+            "Hvis filen ikke finnes blir den opprettet",
+            "Hvis filen finnes blir det lagt til på slutten"
+        ],
+        "answer": "Hvis filen ikke finnes blir den opprettet"
+    },
+    {
+        "question": "open(filnavn) eller open(filnavn, 'r')",
+        "options": [
+            "Hvis filen ikke finnes gjøres unntak",
+            "Hvis filen finnes blir den overskrevet",
+            "Hvis filen ikke finnes blir den opprettet",
+            "Hvis filen finnes gjøres unntak"
+        ],
+        "answer": "Hvis filen ikke finnes gjøres unntak"
+    },
+    {
+        "question": "while betingelse : kropp",
+        "options": [
+            "Når betingelse evalueres til False utføres kropp og løkken avsluttes",
+            "Når betingelse evalueres til True utføres kropp og løkken avsluttes",
+            "Når betingelse evalueres til True avsluttes løkken med det samme",
+            "Når betingelse evalueres til False avsluttes løkken med det samme"
+        ],
+        "answer": "Når betingelse evalueres til False avsluttes løkken med det samme"
+    },
+    {
+        "question": "7 // 2",
+        "options": [
+            "3.0",
+            "1",
+            "3.5",
+            "3"
+        ],
+        "answer": "3"
     }
 ]
