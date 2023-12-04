@@ -1,6 +1,6 @@
 [
     {
-        "question": "Anta at *fil* er åpnet for lesing. Hva skrives ut her?  \n```\ni = 0  \nfor x in fil.read():  \n    i += 1  \nprint(i)",
+        "question": "Anta at fil er åpnet for lesing. Hva skrives ut her?\ni = 0\nfor x in fil.read():\n  i += 1 \nprint(i)",
         "options": [
             "Skriver ut antall tegn i fil",
             "Syntax Error: ... fil.read() has no argument",
@@ -30,7 +30,7 @@
         "answer": "ValueError: ..."
     },
     {
-        "question": "I Python hjelper *navnerom* og skop oss først og fremt med å holder orden på?",
+        "question": "I Python hjelper navnerom og skop oss først og fremt med å holder orden på?",
         "options": [
             "Semantiske feil",
             "Hvor vi er i programmet",
@@ -40,7 +40,7 @@
         "answer": "Variabelverdier"
     },
     {
-        "question": "Hvordan blir uttrykket utført?  \n2**3+8/4*2-9+11*4",
+        "question": "Hvordan blir uttrykket utført?\n2**3+8/4*2-9+11*4",
         "options": [
             "((2**3)+(8/(4*2))-9)+(11*4)",
             "(((2**3)+((8/4)*2))-9)+(11*4)",
@@ -50,7 +50,7 @@
         "answer": "(((2**3)+((8/4)*2))-9)+(11*4)"
     },
     {
-        "question": "**3.14159** er ikke eller kan ikke brukes som?",
+        "question": "3.14159 er ikke eller kan ikke brukes som?",
         "options": [
             "En verdi",
             "Et litteral",
@@ -80,7 +80,7 @@
         "answer": "'5222'"
     },
     {
-        "question": "Hva er *ikke* en innebygget funksjon i Python (altså i biblioteket builtins)?",
+        "question": "Hva er ikke en innebygget funksjon i Python (altså i biblioteket builtins)?",
         "options": [
             "random",
             "len",
@@ -90,7 +90,7 @@
         "answer": "random"
     },
     {
-        "question": "'xxx %.4f yyy' % 2.71828  \nog  \nf'xxx {2.71828:.5} yyy  \ngir den samme tegnstrengen",
+        "question": "'xxx %.4f yyy' % 2.71828\nog\nf'xxx {2.71828:.5} yyy\ngir den samme tegnstrengen",
         "options": [
             "'xxx 2.7183 yyy'",
             "'xxx 2.718 yyy'",
@@ -100,7 +100,7 @@
         "answer": "'xxx 2.7183 yyy'"
     },
     {
-        "question": "*break* i en Python-løkke",
+        "question": "break i en Python-løkke",
         "options": [
             "Gjør runden ferdig og fortsetter løkken",
             "Avslutter løkken med det samme",
@@ -110,7 +110,7 @@
         "answer": "Avslutter løkken med det sammen"
     },
     {
-        "question": "Hva slags programsetning eller -utrykk er brukt her:  \n```\nif x < 0:  \n  print('Tallet er for lite.')  \nelif x > 10:  \n  print('Tallet er for stort.'  \nelse:  \n  print('Tallet er ok.'))",
+        "question": "Hva slags programsetning eller -utrykk er brukt her:\nif x < 0:\n  print('Tallet er for lite.')\nelif x > 10:\n  print('Tallet er for stort.')\nelse:\n  print('Tallet er ok.')",
         "options": [
             "Betinget uttrykk ('conditional expression')",
             "Unntak",
@@ -120,7 +120,7 @@
         "answer": "Betinger alternativ utførelse ('chained conditional')"
     },
     {
-        "question": "Hva slags programsetning eller -utrykk er brukt her:  \nx-y if x>y else 0",
+        "question": "Hva slags programsetning eller -utrykk er brukt her:\nx-y if x>y else 0",
         "options": [
             "Betinget uttrykk ('conditional expression')",
             "Betinger alternativ utførelse ('chained conditional')",
@@ -150,7 +150,7 @@
         "answer": "PEMDAS > sammenligninger > logiske operatorer"
     },
     {
-        "question": "Hvilken type returneres av programsetningen:  \ninput('Hva er din kroppsvekt:')",
+        "question": "Hvilken type returneres av programsetningen:\ninput('Hva er din kroppsvekt:')",
         "options": [
             "int",
             "Det kommer an på brukeren",
@@ -160,7 +160,7 @@
         "answer": "str"
     },
     {
-        "question": "Hvilket er *ikke* et reservert ord i Python?",
+        "question": "Hvilket er ikke et reservert ord i Python?",
         "options": [
             "return",
             "class",
@@ -170,7 +170,7 @@
         "answer": "value"
     },
     {
-        "question": "Hva er resultatet av **int('3.14159')**?",
+        "question": "Hva er resultatet av int('3.14159')?",
         "options": [
             "ValueError: ...",
             "3.0",
@@ -190,17 +190,17 @@
         "answer": "En operator har ulik betydning i ulike sammenhenger"
     },
     {
-        "question": "I programmsetningen  \n*print('Hallo', 'verden', end='!')*  \ner det mest riktig å kalle *print()*",
+        "question": "I programmsetningen\nprint('Hallo', 'verden', end='!')\ner det mest riktig å kalle print()",
         "options": [
-            "et uttrykk",
-            "et argument",
-            "en prosedyre",
-            "en variabel"
+            "Et uttrykk",
+            "Et argument",
+            "En prosedyre",
+            "En variabel"
         ],
-        "answer": "en prosedyre"
+        "answer": "En prosedyre"
     },
     {
-        "question": "**continue** i en Python-løkke",
+        "question": "continue i en Python-løkke",
         "options": [
             "Avslutter runden med det samme men fortsetter løkken",
             "Gjør runden ferdig og avslutter løkken",
@@ -210,7 +210,7 @@
         "answer": "Avslutter runden med det samme men fortsetter løkken"
     },
     {
-        "question": "I Python betyr **nonlocal x** at",
+        "question": "I Python betyr nonlocal x at",
         "options": [
             "Vi skal bruke x i nærmeste omsluttende skop",
             "x er en parameter",
@@ -220,27 +220,27 @@
         "answer": "Vi skal bruke x i nærmeste omsluttende skop"
     },
     {
-        "question": "I programlinjen  \n*def skriv_persondata(p, lengde='cm', vekt='kg'):*  \ner **'kg'**?",
+        "question": "I programlinjen\ndef skriv_persondata(p, lengde='cm', vekt='kg'):\ner 'kg'?",
         "options": [
-            "en parameter",
-            "et argument",
-            "en standardverdi",
-            "en opsjon"
+            "En parameter",
+            "Et argument",
+            "En standardverdi",
+            "En opsjon"
         ],
-        "answer": "en standardverdi"
+        "answer": "En standardverdi"
     },
     {
-        "question": "I programlinjen  \n*def skriv_persondata(p, lengde='cm', vekt='kg'):*  \ner **p**?",
+        "question": "I programlinjen\ndef skriv_persondata(p, lengde='cm', vekt='kg'):\ner p?",
         "options": [
-            "en opsjon",
-            "et argument",
-            "en standardverdi",
-            "en parameter"
+            "En opsjon",
+            "Et argument",
+            "En standardverdi",
+            "En parameter"
         ],
-        "answer": "en parameter"
+        "answer": "En parameter"
     },
     {
-        "question": "Hva slags programmeringsteknikk er brukt her:  \n*if stasjon in målinger and 'Torg' in målinger[stasjon]:*",
+        "question": "Hva slags programmeringsteknikk er brukt her:\nif stasjon in målinger and 'Torg' in målinger[stasjon]:",
         "options": [
             "Betinger alternativ utførelse ('chained conditional')",
             "Betinget uttrykk ('conditional expression')",
@@ -250,7 +250,7 @@
         "answer": "Avkortet evaluering ('short-circuit evaluation')"
     },
     {
-        "question": "**{'A', 'b', 'r', 'a'}|{'k', 'a', 'd', 'a', 'b', 'r', 'a'}** kan gi",
+        "question": "{'A', 'b', 'r', 'a'}|{'k', 'a', 'd', 'a', 'b', 'r', 'a'} kan gi",
         "options": [
             "{'a', 'k', 'd', 'A', 'r', 'b'}",
             "{'b', 'a', 'r'}",
@@ -260,17 +260,17 @@
         "answer": "{'a', 'k', 'd', 'A', 'r', 'b'}"
     },
     {
-        "question": "En Python-mengde (**set()**) er",
+        "question": "En Python-mengde set() er",
         "options": [
-            "forandrbar, men ikke en sekvenstype",
-            "en forandrbar sekvenstype",
-            "en uforandrbar sekvenstype",
-            "uforandrbar og ikke en sekvenstype"
+            "Forandrbar, men ikke en sekvenstype",
+            "En forandrbar sekvenstype",
+            "En uforandrbar sekvenstype",
+            "Uforandrbar og ikke en sekvenstype"
         ],
-        "answer": "forandrbar, men ikke en sekvenstype"
+        "answer": "Forandrbar, men ikke en sekvenstype"
     },
     {
-        "question": "For å lese inn en tegnstreng fra brukeren kan vi instansiere **tkinter**-klassen",
+        "question": "For å lese inn en tegnstreng fra brukeren kan vi instansiere tkinter-klassen",
         "options": [
             "Frame",
             "Entry",
@@ -290,7 +290,7 @@
         "answer": "Skjermelement, hendelse og hendelsehåndterer"
     },
     {
-        "question": "Hvilken er *ikke* et GUI-element (widget) i *tkinter*?",
+        "question": "Hvilken er ikke et GUI-element (widget) i tkinter?",
         "options": [
             "Frame",
             "TopLevel",
@@ -360,7 +360,7 @@
         "answer": "Ekvivalente og kanskje identiske"
     },
     {
-        "question": "l1 = ['løping', 'spinning', 'styrke']  \nl2 = l1[:]  \nNå er l1 og l2?",
+        "question": "l1 = ['løping', 'spinning', 'styrke']\nl2 = l1[:]\nNå er l1 og l2?",
         "options": [
             "Ekvivalente, men aldri identiske",
             "Hverken ekvivalente eller identiske",
@@ -420,7 +420,7 @@
         "answer": "deltagere er en sekvens av ukjent lengde"
     },
     {
-        "question": "```for i in range(1, 6, 2):  \n  if i%2 == 1:  \n    print(i**2, end='')",
+        "question": "for i in range(1, 6, 2):\n  if i%2 == 1:\n    print(i**2, end='')",
         "options": [
             "1 9 25",
             "1 6 2",
@@ -430,17 +430,17 @@
         "answer": "1 9 25"
     },
     {
-        "question": "I Python er dette: **2.71828**",
+        "question": "I Python er dette: 2.71828",
         "options": [
-            "et heltall",
-            "en tegnstreng",
-            "en variabel",
-            "et desimaltall"
+            "Et heltall",
+            "En tegnstreng",
+            "En variabel",
+            "Et desimaltall"
         ],
         "answer": "et desimaltall"
     },
     {
-        "question": "**x is y** vil si at **x** og **y** er",
+        "question": "x is y vil si at x og y er",
         "options": [
             "Ekvivalente og ikke identiske",
             "Ekvivalente, men ikke nødvendigvis identiske",
@@ -450,7 +450,7 @@
         "answer": "Ekvivalente og identiske"
     },
     {
-        "question": "**x == y** vil si at **x** og **y** er",
+        "question": "x == y vil si at x og y er",
         "options": [
             "Ekvivalente men ikke nødvendigvis identiske",
             "Identiske, men ikke nødvendigvis ekvivalente",

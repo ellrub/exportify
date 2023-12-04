@@ -1,0 +1,602 @@
+[
+  {
+    "question": "I programsetningen\nprint('Hallo', 'verden', end='!')\nhva er det mest rikitg å kalle print()",
+    "answer": "En prosedyre",
+    "options": [
+      "En prosedyre",
+      "En variabel",
+      "Et argument",
+      "Et uttrykk"
+    ]
+  },
+  {
+    "question": "I Python er dette: 2.71828",
+    "answer": "Et desimaltall",
+    "options": [
+      "Et desimaltall",
+      "Et heltall",
+      "En tegnstreng",
+      "En variabel"
+    ]
+  },
+  {
+    "question": "Høy presedens utføres først. Hva er riktig rekkefølge?",
+    "answer": "PEMDAS > sammenligninger > logiske operatorer",
+    "options": [
+      "PEMDAS > sammenligninger > logiske operatorer",
+      "logiske operatorer > PEMDAS > sammenligninger",
+      "PEMDAS > logiske operatorer > sammenligninger",
+      "logiske operatorer > sammenligninger > PEMDAS"
+    ]
+  },
+  {
+    "question": "Hvordan blir uttrykket utført?  2**3+8/4*2-9+11*4",
+    "answer": "(((2**3)+((8/4)*2))-9)+(11*4)",
+    "options": [
+      "(((2**3)+((8/4)*2))-9)+(11*4)",
+      "(2**3)+((8/(4*2))-((9+11)*4))",
+      "((2**3)+8/(4*2))-9)+(11*4)",
+      "((2**3)+((8/4)*2))-(9+(11*4))"
+    ]
+  },
+  {
+    "question": "Hva slags programsetning eller -uttrykk er brukt her:\nx-y if x > y else 0",
+    "answer": "Betinget uttrykk ('conditional expression')",
+    "options": [
+      "Betinget uttrykk ('conditional expression')",
+      "Unntak",
+      "Betinget alternativ utførelse ('Chained conditional')",
+      "Avkortet evaluering ('short-circuit evaluation')"
+    ]
+  },
+  {
+    "question": "Hva slags programsetning eller -uttrykk er brukt her:\nif x < 0:\n  print('Tallet er for lite')\nelif x > 10:\n  print('Tallet er for stort')\nelse:\n  print('Tallet er ok')",
+    "answer": "Betinget alternativ utførelse ('chained conditional')",
+    "options": [
+      "Betinget alternativ utførelse ('chained conditional')",
+      "Unntak",
+      "Betinget uttrykk ('conditional expression')",
+      "Avkortet evaluering ('short-circuit evaluation')"
+    ]
+  },
+  {
+    "question": "Hva slags programmeringsteknikk er brukt her:\nif stasjon in målinger and 'Torg' in målinger[stasjon]:\n...",
+    "answer": "Avkortet evaluering ('short-circuit evaluation')",
+    "options": [
+      "Avkortet evaluering ('short-circuit evaluation')",
+      "Unntak",
+      "Betinget alternativ utførelse ('chained conditional')",
+      "Betinget uttrykk ('conditional expression')"
+    ]
+  },
+  {
+    "question": "I Python hjelper navnerom og skop oss først og fremst med å holde orden på",
+    "answer": "Variabelverdier",
+    "options": [
+      "Variabelverdier",
+      "Semantiske feil",
+      "Syntaksfeil",
+      "Hvor vi er i programmet"
+    ]
+  },
+  {
+    "question": "I programlinjen:\ndef skriv_persondata(p, lengde='cm', vekt='kg')\nHva er p?",
+    "answer": "En parameter",
+    "options": [
+      "En parameter",
+      "Et argument",
+      "En opsjon",
+      "En standardverdi"
+    ]
+  },
+  {
+    "question": "I programlinjen:\ndef skriv_persondata(p, lengde='cm', vekt='kg')\nHva er kg?",
+    "answer": "En standardverdi",
+    "options": [
+      "En standardverdi",
+      "En parameter",
+      "En opsjon",
+      "Et argument"
+    ]
+  },
+  {
+    "question": "I Python betyr nonlocal x at?",
+    "answer": "Vi skal bruke x i nærmeste omsluttende skop",
+    "options": [
+      "Vi skal bruke x i nærmeste omsluttende skop",
+      "x er en global variabel",
+      "x er en parameter",
+      "Vi skal bruke x i det globale skopet"
+    ]
+  },
+  {
+    "question": "for i in range(1, 6, 2):\n  if i%2 == 1:\n    print(i**2, end='')",
+    "answer": "1 9 25",
+    "options": [
+      "1 9 25",
+      "1",
+      "9 25 49",
+      "1 6 2"
+    ]
+  },
+  {
+    "question": "Overbelastning i Python-kode vil si at",
+    "answer": "En operator har ulik betydning i ulike sammenhenger",
+    "options": [
+      "En operator har ulik betydning i ulike sammenhenger",
+      "En variabel tilordnes for mange ulike verdier",
+      "Koden krever for mye ressurser",
+      "Koden er for stor og tung å lese"
+    ]
+  },
+  {
+    "question": "while betingelse : kropp",
+    "answer": "Når betingelse evalueres til False avsluttes løkken med det samme",
+    "options": [
+      "Når betingelse evalueres til False avsluttes løkken med det samme",
+      "Når betingelse evalueres til True avsluttes løkken med det samme",
+      "Når betingelse evalueres til True utføres kropp og løkken avsluttes",
+      "Når betingelse evalueres til False utføres kropp og løkken avsluttes"
+    ]
+  },
+  {
+    "question": "continue i en Python-løkke",
+    "answer": "Avsluttter runden med det samme men fortsetter løkken",
+    "options": [
+      "Avsluttter runden med det samme men fortsetter løkken",
+      "Avsluttter løkken med det samme",
+      "Gjør runden ferdig og avsluttter løkken",
+      "Gjør runden ferdig og fortsetter løkken"
+    ]
+  },
+  {
+    "question": "break in en Python-løkke",
+    "answer": "Avsluttter løkken med det samme",
+    "options": [
+      "Avsluttter løkken med det samme",
+      "Gjør runden ferdig og fortsetter løkken",
+      "Gjør runden ferdig og avsluttter løkken",
+      "Avsluttter runden med det samme men fortsetter løkken"
+    ]
+  },
+  {
+    "question": "def registrer(*deltagere):",
+    "answer": "deltagere er en sekvens av ukjent lengde",
+    "options": [
+      "deltagere er en sekvens av ukjent lengde",
+      "deltagere er en opsjon med None som standardverdi",
+      "'*deltagere' er et parameternavn",
+      "deltagere leses fra tastatur hvis nødvendig"
+    ]
+  },
+  {
+    "question": "[1, 3, 4].remove(2)",
+    "answer": "ValueError...",
+    "options": [
+      "ValueError...",
+      "[1, 3]",
+      "None",
+      "[1, 4]"
+    ]
+  },
+  {
+    "question": "['A', 'B', 'C'].remove('B')",
+    "answer": "None",
+    "options": [
+      "None",
+      "ValueError...",
+      "['A', 'C']",
+      "'B'"
+    ]
+  },
+  {
+    "question": "[1, 3, 4].append(2)",
+    "answer": "None",
+    "options": [
+      "None",
+      "2",
+      "[1, 3, 4, 2]",
+      "[1, 2, 3, 4]"
+    ]
+  },
+  {
+    "question": "'mom' in 'Kardemomme'",
+    "answer": "True",
+    "options": [
+      "True",
+      "ValueError...",
+      "None",
+      "False"
+    ]
+  },
+  {
+    "question": "type(bool)",
+    "answer": "<class 'type'>",
+    "options": [
+      "<class 'type'>",
+      "<class 'builtin_function_or_method'>",
+      "Boolean",
+      "'bool'"
+    ]
+  },
+  {
+    "question": "type(lambda x: x*x)",
+    "answer": "<class 'function'>",
+    "options": [
+      "<class 'function'>",
+      "<class 'builtin_function_or_method'>",
+      "<class 'str'>",
+      "<class 'type'>"
+    ]
+  },
+  {
+    "question": "Hva er resultatet av int('3.14159')",
+    "answer": "ValueError...",
+    "options": [
+      "ValueError...",
+      "3.0",
+      "3.14159",
+      "3"
+    ]
+  },
+  {
+    "question": "3.14159 er IKKE eller kan IKKE brukes som",
+    "answer": "Et variabelnavn",
+    "options": [
+      "Et variabelnavn",
+      "Et litteral",
+      "En verdi",
+      "Et objekt"
+    ]
+  },
+  {
+    "question": "Det mest presise er å si at en Python-klasse kan definere",
+    "answer": "Metoder og attributter",
+    "options": [
+      "Metoder og attributter",
+      "Metoder og variabler",
+      "Funksjoner og attributter",
+      "Funksjoner og variabler"
+    ]
+  },
+  {
+    "question": "En Python variabel kan IKKE inneholde",
+    "answer": "Den kan inneholde alle disse",
+    "options": [
+      "Den kan inneholde alle disse",
+      "En funksjon",
+      "Et objekt",
+      "En verdi"
+    ]
+  },
+  {
+    "question": "Hva er IKKE en innebygget funksjon i Python (altså i biblioteket builtins)",
+    "answer": "random",
+    "options": [
+      "random",
+      "dir",
+      "print",
+      "len"
+    ]
+  },
+  {
+    "question": "'Kardemomme'[-2:-9:-3]",
+    "answer": "'mmr'",
+    "options": [
+      "'mmr'",
+      "''",
+      "'mea'",
+      "ValueError..."
+    ]
+  },
+  {
+    "question": "'xxx % .4f yyy' % 2.71828\nog\nf'xxx {2.71828:.5} yyy'\nGir den samme tegnstrengen",
+    "answer": "'xxx 2.7183 yyy'",
+    "options": [
+      "'xxx 2.7183 yyy'",
+      "'xxx 2.718 yyy'",
+      "'xxx 2.71828 yyy'",
+      "xxx 2.7182 yyy'"
+    ]
+  },
+  {
+    "question": "open(filnavn) eller open(filnavn, 'r')",
+    "answer": "Hvis filen ikke finnes gjøres unntak",
+    "options": [
+      "Hvis filen ikke finnes gjøres unntak",
+      "Hvis filen ikke finnes blir den opprettet",
+      "Hvis filen finnes blir den overskrevet",
+      "Hvis filen finnes gjøres unntak"
+    ]
+  },
+  {
+    "question": "open(filnavn, 'w')",
+    "answer": "Hvis filen ikke finnes blir den opprettet",
+    "options": [
+      "Hvis filen ikke finnes blir den opprettet",
+      "Hvis filen ikke finnes gjøres unntak",
+      "Hvis filen finnes blir det lagt til på slutten",
+      "Hvis filen finnes gjøres unntak"
+    ]
+  },
+  {
+    "question": "Anta at fil er åpnet for lesing. Hva skriver ut her?\ni = 0\nfor x in fil.read():\n  i += 1\nprint(i)",
+    "answer": "Skriver ut antall tegn i fil",
+    "options": [
+      "Skriver ut antall tegn i fil",
+      "Skriver ut antall linjer i fil",
+      "SyntaxError: ... fil.read() has no argument",
+      "1"
+    ]
+  },
+  {
+    "question": "for x in open(filnavn, 'r')",
+    "answer": "Går i løkke gjennom filen linje for linje",
+    "options": [
+      "Går i løkke gjennom filen linje for linje",
+      "En en syntaksfeil",
+      "Går i løkke gjennom filen tegn for tegn",
+      "Leser hele filen inn i x og går en runde i løkke"
+    ]
+  },
+  {
+    "question": "Hvilket er IKKE et reservert ord i Python",
+    "answer": "value",
+    "options": [
+      "value",
+      "class",
+      "del",
+      "return"
+    ]
+  },
+  {
+    "question": "fil.close()",
+    "answer": "Nødvendig for append og write",
+    "options": [
+      "Nødvendig for append og write",
+      "Kun nødvendig for append",
+      "Kun tillatt for append og write",
+      "Kun nødvendig for write"
+    ]
+  },
+  {
+    "question": "['A', 'C', 'b', 'D'].sort() == ['A', 'C', 'D', 'b']",
+    "answer": "False",
+    "options": [
+      "False",
+      "True",
+      "ValueError...",
+      "SyntaxError..."
+    ]
+  },
+  {
+    "question": "sorted(['A', 'C', 'b', 'D'] == ['A', 'C', 'D', 'b'])",
+    "answer": "True",
+    "options": [
+      "True",
+      "False",
+      "ValueError...",
+      "SyntaxError..."
+    ]
+  },
+  {
+    "question": "x == y vil si at x og y er",
+    "answer": "Ekvivalente og identiske",
+    "options": [
+      "Ekvivalente og identiske",
+      "Ekvivalente og ikke identiske",
+      "Identiske men ikke nødvendigvis ekvivalente",
+      "Ekvivalente men ikke nødvendigvis identiske"
+    ]
+  },
+  {
+    "question": "{'aerobics': 2, 'løping': 4, 'yoga': 1}[4]",
+    "answer": "Key error: '4'",
+    "options": [
+      "Key error: '4'",
+      "('løping': 2)",
+      "'løping'",
+      "2"
+    ]
+  },
+  {
+    "question": "{'aerobics': 2, 'løping': 4, 'yoga': 1}['løping']",
+    "answer": "4",
+    "options": [
+      "4",
+      "('løping', 4)",
+      "Key error: 'løping'",
+      "{'løping': 4}"
+    ]
+  },
+  {
+    "question": "list({'aerobics': 2, 'løping': 4, 'yoga': 1}.items())[1]",
+    "answer": "('løping', 4)",
+    "options": [
+      "('løping', 4)",
+      "4",
+      "{'løping': 4}",
+      "Key error: 1"
+    ]
+  },
+  {
+    "question": "Hvilken er IKKE et GUI-element (widget) i tkinter?",
+    "answer": "Mouse",
+    "options": [
+      "Mouse",
+      "Frame",
+      "Button",
+      "TopLevel"
+    ]
+  },
+  {
+    "question": "Tre sentrale begrep i hendelsesdrevet programmering ('event-driver programming') er:",
+    "answer": "Skjermelement, hendelse og hendelseshåndterer",
+    "options": [
+      "Skjermelement, hendelse og hendelseshåndterer",
+      "Skjerm, tastatur og mus",
+      "Object, variabel og verdi",
+      "Vinduer, rammer og elementer"
+    ]
+  },
+  {
+    "question": ".grid() eller .pack()",
+    "answer": "En av dem (eller en lignende metode) må kalles før et element vises",
+    "options": [
+      "En av dem (eller en lignende metode) må kalles før et element vises",
+      "Er i praksis valgfri for alle elementer",
+      ".grid() må kalles for alle elementer i rammer",
+      ".pack() må kalles for alle elementer før de vises"
+    ]
+  },
+  {
+    "question": "'5' + 3 * '2'",
+    "answer": "'5222'",
+    "options": [
+      "'5222'",
+      "'11'",
+      "'16'",
+      "'533'"
+    ]
+  },
+  {
+    "question": "For å lese inn en tegnstreng fra brukeren kan vi instansiere tkinter-klassen",
+    "answer": "Entry",
+    "options": [
+      "Entry",
+      "Frame",
+      "Label",
+      "Input"
+    ]
+  },
+  {
+    "question": "En Python-mengde set() er",
+    "answer": "Forandrbar, men ikke en sekvenstype",
+    "options": [
+      "Forandrbar, men ikke en sekvenstype",
+      "En forandbar sekvenstype",
+      "Uforandbar og ikke en sekvenstype",
+      "En uforandbar sekvenstype"
+    ]
+  },
+  {
+    "question": "{'A', 'b', 'r', 'a'}|{'k', 'a', 'd', 'a', 'b', 'r', 'a',} kan gi",
+    "answer": "{'a', 'k', 'd', 'A', 'r', 'b',}",
+    "options": [
+      "{'a', 'k', 'd', 'A', 'r', 'b',}",
+      "True",
+      "{'b', 'a', 'r'}",
+      "SyntaxError: ..."
+    ]
+  },
+  {
+    "question": "eval('(lambda x: x // 2)(5)') returnerer",
+    "answer": "2",
+    "options": [
+      "2",
+      "'(lambda x: x // 2)(5)'",
+      "5",
+      "SyntaxError: ..."
+    ]
+  },
+  {
+    "question": "[x % 3 for x in range(0, 21, 7)]",
+    "answer": "[0, 1, 2]",
+    "options": [
+      "[0, 1, 2]",
+      "[1, 3, 5]",
+      "[0, 7, 14]",
+      "[0, 7, 14, 21]"
+    ]
+  },
+  {
+    "question": "[[bokstav + str(tall) for tall in [1, 2, 3]] for bokstav in ['A', 'B', 'C']]",
+    "answer": "[['A1', 'A2', 'A3'], ['B1', 'B2', 'B3'], ['C1', 'C2', 'C3']]",
+    "options": [
+      "[['A1', 'A2', 'A3'], ['B1', 'B2', 'B3'], ['C1', 'C2', 'C3']]",
+      "[['A1', 'B1', 'C1'], ['A2', 'B2', 'C2'], ['A3', 'B3', 'C3']]",
+      "['A1', 'A2', 'A3', 'B1', 'B2', 'B3', 'C1', 'C2', 'C3']",
+      "['A1', 'B1', 'C1', 'A2', 'B2', 'C2', 'A3', 'B3', 'C3']"
+    ]
+  },
+  {
+    "question": "x is y vil si at x og y er",
+    "answer": "Ekvivalente og identiske",
+    "options": [
+      "Identiske men ikke nødvendigvis ekvivalente",
+      "Ekvivalente og ikke identiske",
+      "Ekvivalente og identiske",
+      "Ekvivalente men ikke nødvendigvis identiske"
+    ]
+  },
+  {
+    "question": "l1 = ['løping', 'spinning', 'styrke']\nl2 = l1[:]\nNå er l1 og l2",
+    "answer": "Ekvivalente, men aldri identiske",
+    "options": [
+      "Både ekvivalente og identiske",
+      "Hverken ekvivalente eller identiske",
+      "Ekvivalente, men aldri identiske",
+      "Ekvivalente, men neppe identiske"
+    ]
+  },
+  {
+    "question": "len(['løping', 'spinning', 'styrke'])\nog\n9//3 er",
+    "answer": "Ekvivalente og kanskje identiske",
+    "options": [
+      "Hverken ekvivalente eller identiske",
+      "Ekvivalente, men aldri identiske",
+      "Ekvivalente og kanskje identiske",
+      "Identiske, men ikke ekvivalente"
+    ]
+  },
+  {
+    "question": "Når vi endrer verdien til en funksjonsparameter i kroppen til en funksjon, endres også den overførte argumentverdien?",
+    "answer": "Ja, men ikke hvis endringen skjer ved tilordning til parametervariabelen",
+    "options": [
+      "Ja, hvis argumentet har globalt skop",
+      "Ja, uansett",
+      "Ja, men ikke hvis endringen skjer ved tilordning til parametervariabelen",
+      "Nei, aldri"
+    ]
+  },
+  {
+    "question": "7 // 2",
+    "answer": "3",
+    "options": [
+      "3",
+      "3.0",
+      "1",
+      "3.5"
+    ]
+  },
+  {
+    "question": "11 % 3",
+    "answer": "2",
+    "options": [
+      "2",
+      "3.0",
+      "3.6667",
+      "3"
+    ]
+  },
+  {
+    "question": "Hvilken type returneres av programsetningen:\ninput('Hva er din kroppsvekt: ')",
+    "answer": "str",
+    "options": [
+      "str",
+      "Det kommer an på brukeren",
+      "int",
+      "float"
+    ]
+  },
+  {
+    "question": "Høy presedens utføres først. Hva er riktig rekkefølge?",
+    "answer": "not > and > or",
+    "options": [
+      "not > and > or",
+      "or > and > not",
+      "not > or > and",
+      "and > or > not"
+    ]
+  }
+]
