@@ -1,0 +1,32 @@
+[
+    {
+        "question": "Qestion 1, the right answer here should be True",
+        "options": [
+            "True",
+            "False",
+            "Error",
+            "Maybe"
+        ],
+        "answer": "True"
+    },
+    {
+        "question": "Qestion 2, the right answer here should be False",
+        "options": [
+            "False",
+            "None",
+            "True",
+            "ValueError"
+        ],
+        "answer": "False"
+    },
+    {
+        "question": "Qestion 3, the right answer here should be None",
+        "options": [
+            "None",
+            "True",
+            "No",
+            "Yes"
+        ],
+        "answer": "None"
+    }
+]
