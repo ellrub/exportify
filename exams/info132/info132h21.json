@@ -382,7 +382,7 @@
     {
         "question": "'Kardemomme'[-2:-9:-3]",
         "options": [
-            "''",
+            "'aem'",
             "ValueError: ...",
             "'mmr'",
             "'mea'"
