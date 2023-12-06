@@ -1,6 +1,6 @@
 [
   {
-    "question": "I programsetningen\nprint('Hallo', 'verden', end='!')\nhva er det mest rikitg å kalle print()",
+    "question": "# Hva er det mest riktig å kalle print() i denne programsetningen:\nprint('Hallo', 'verden', end='!')",
     "answer": "En prosedyre",
     "options": [
       "En prosedyre",
@@ -80,7 +80,7 @@
     ]
   },
   {
-    "question": "I programlinjen:\ndef skriv_persondata(p, lengde='cm', vekt='kg')\nHva er p?",
+    "question": "Hva er p i programlinjen:\ndef skriv_persondata(p, lengde='cm', vekt='kg')",
     "answer": "En parameter",
     "options": [
       "En parameter",
@@ -90,7 +90,7 @@
     ]
   },
   {
-    "question": "I programlinjen:\ndef skriv_persondata(p, lengde='cm', vekt='kg')\nHva er kg?",
+    "question": "Hva er kg i programlinjen:\ndef skriv_persondata(p, lengde='cm', vekt='kg')",
     "answer": "En standardverdi",
     "options": [
       "En standardverdi",
@@ -120,7 +120,7 @@
     ]
   },
   {
-    "question": "Overbelastning i Python-kode vil si at",
+    "question": "Overbelastning i Python-kode vil si at?",
     "answer": "En operator har ulik betydning i ulike sammenhenger",
     "options": [
       "En operator har ulik betydning i ulike sammenhenger",
@@ -150,7 +150,7 @@
     ]
   },
   {
-    "question": "break in en Python-løkke",
+    "question": "break i en Python-løkke",
     "answer": "Avsluttter løkken med det samme",
     "options": [
       "Avsluttter løkken med det samme",
@@ -170,7 +170,7 @@
     ]
   },
   {
-    "question": "[1, 3, 4].remove(2)",
+    "question": "Hva gir [1, 3, 4].remove(2)",
     "answer": "ValueError...",
     "options": [
       "ValueError...",
@@ -180,7 +180,7 @@
     ]
   },
   {
-    "question": "['A', 'B', 'C'].remove('B')",
+    "question": "Hva gir ['A', 'B', 'C'].remove('B')",
     "answer": "None",
     "options": [
       "None",
@@ -320,7 +320,7 @@
     ]
   },
   {
-    "question": "Anta at fil er åpnet for lesing. Hva skriver ut her?\ni = 0\nfor x in fil.read():\n  i += 1\nprint(i)",
+    "question": "Anta at fil er åpnet for lesing. Hva skrives ut her?\ni = 0\nfor x in fil.read():\n  i += 1\nprint(i)",
     "answer": "Skriver ut antall tegn i fil",
     "options": [
       "Skriver ut antall tegn i fil",
@@ -530,7 +530,7 @@
     ]
   },
   {
-    "question": "l1 = ['løping', 'spinning', 'styrke']\nl2 = l1[:]\nNå er l1 og l2",
+    "question": "l1 = ['løping', 'spinning', 'styrke']\nl2 = l1[:]\nNå er l1 og l2?",
     "answer": "Ekvivalente, men aldri identiske",
     "options": [
       "Både ekvivalente og identiske",
@@ -540,7 +540,7 @@
     ]
   },
   {
-    "question": "len(['løping', 'spinning', 'styrke'])\nog\n9//3 er",
+    "question": "len(['løping', 'spinning', 'styrke'])\nog\n9//3 er?",
     "answer": "Ekvivalente og kanskje identiske",
     "options": [
       "Hverken ekvivalente eller identiske",

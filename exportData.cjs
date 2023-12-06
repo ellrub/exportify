@@ -1,6 +1,6 @@
 const admin = require('firebase-admin');
 const serviceAccount = require('../../../../ruben/Development/Examify/ExamifyFirebaseAdmin.json');
-const data = require('./info132h21.json');
+const data = require('./exams/info132/info132h21.json');
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount)

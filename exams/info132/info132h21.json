@@ -1,6 +1,6 @@
 [
     {
-        "question": "Anta at fil er åpnet for lesing. Hva skrives ut her?\ni = 0\nfor x in fil.read():\n  i += 1 \nprint(i)",
+        "question": "# Anta at fil er åpnet for lesing. Hva skrives ut her?\ni = 0\nfor x in fil.read():\n  i += 1 \nprint(i)",
         "options": [
             "Skriver ut antall tegn i fil",
             "Syntax Error: ... fil.read() has no argument",
