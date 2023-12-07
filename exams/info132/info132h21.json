@@ -107,7 +107,7 @@
             "Gjør runden ferdig og avslutter løkken",
             "Avslutter runden med det samme men fortsetter løkken"
         ],
-        "answer": "Avslutter løkken med det sammen"
+        "answer": "Avslutter løkken med det samme"
     },
     {
         "question": "Hva slags programsetning eller -utrykk er brukt her:\nif x < 0:\n  print('Tallet er for lite.')\nelif x > 10:\n  print('Tallet er for stort.')\nelse:\n  print('Tallet er ok.')",
