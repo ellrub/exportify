@@ -537,7 +537,7 @@
             "5"
         ],
         "answer": "2",
-        "explanation": ""
+        "explanation": "eval() er en innebygd funksjon som tolker og evaluerer en streng som om det var et uttrykk\n'(lambda x: x // 2)' Tar inn et argument x og returnerer x floor delt med 2, eller x // 2\n(5) er argumentet som blir lagt inn i x, og vi får uttrykket 5 // 2, som blir 2 (// runder ned til nærmeste hele tall)"
     },
     {
         "question": ".grid() eller .pack()",
@@ -548,7 +548,7 @@
             "Er i praksis valgfri for alle elementer"
         ],
         "answer": "En av dem (eller en lignende metode) må kalles før et element vises",
-        "explanation": "KOMMER"
+        "explanation": ".grid() # Lar deg plassere widgets i et tabell-lignende rutenett\n.pack() # Plasserer widgets i et vindu i rekkefølgen de er pakket\nUten disse metodene, vil ikke widgets vises i vinduet."
     },
     {
         "question": "list({'aerobics': 2, 'løping': 4, 'yoga': 1}.items())[1]",
@@ -559,7 +559,7 @@
             "Key error: 1"
         ],
         "answer": "('løping', 4)",
-        "explanation": "KOMMER"
+        "explanation": "{'aerobics': 2, 'løping': 4, 'yoga': 1} # Er en ordbok (dictionary)\n.items() # Er en metode som returnerer en liste av tupler\nlist() # Er en innebygget funksjon som lager en liste\n[1] etter list() er en indeksoperasjon som henter det andre elementet i listen.\nSå siden uttrykket returnerer en liste med tupler, og vi spørr etter den som ligger på indeks 1, så får vi ('løping', 4)"
     },
     {
         "question": "{'aerobics': 2, 'løping': 4, 'yoga': 1}['løping']",
@@ -570,7 +570,7 @@
             "4"
         ],
         "answer": "4",
-        "explanation": "KOMMER"
+        "explanation": "{'aerobics': 2, 'løping': 4, 'yoga': 1}['løping'] # Dette er en operasjon som henter ut verdien til nøkkelen 'løping' i ordboken (dictionary)."
     },
     {
         "question": "{'aerobics': 2, 'løping': 4, 'yoga': 1}[4]",
@@ -581,10 +581,10 @@
             "Key error: '4'"
         ],
         "answer": "Key error: '4'",
-        "explanation": "KOMMER"
+        "explanation": "{'aerobics': 2, 'løping': 4, 'yoga': 1}[4] # Dette er en operasjon som henter ut verdien til nøkkelen 4 i ordboken (dictionary), men siden nøkkelen 4 ikke finnes, så får vi altså Key error: '4'"
     },
     {
-        "question": "sorted(['A', 'C', 'b', 'D'] == ['A', 'C', 'D', 'b'])",
+        "question": "sorted(['A', 'C', 'b', 'D']) == ['A', 'C', 'D', 'b']",
         "options": [
             "ValueError: ...",
             "False",
@@ -592,7 +592,7 @@
             "SyntaxError: ..."
         ],
         "answer": "True",
-        "explanation": "KOMMER"
+        "explanation": "sorted(['A', 'C', 'b', 'D']) # Vil evalueres først, som vil gi ['A', 'C', 'D', 'b']\nSå sjekkes det om den nye sorterte listen er lik ['A', 'C', 'D', 'b']. Det er den, så vi får True"
     },
     {
         "question": "['A', 'C', 'b', 'D'].sort() == ['A', 'C', 'D', 'b']",
@@ -603,7 +603,7 @@
             "SyntaxError: ..."
         ],
         "answer": "False",
-        "explanation": "KOMMER"
+        "explanation": ".sort() er en metode som sorterer listen på plassen og returnerer None\nDette evaluerer til None == ['A', 'C', 'D', 'b'], som er False"
     },
     {
         "question": "fil.close()",
@@ -614,7 +614,7 @@
             "Kun nødvendig for write"
         ],
         "answer": "Nødvendig for append og write",
-        "explanation": "KOMMER"
+        "explanation": ".close() er en metode som lukker en åpen fil. Dette er en god ide fordi det frigjør systemressurser som filen bruker, og sikrer at eventuelle endringer du har gjort i filen blir skrevet til disken. Kan også være en god ide selv om filen bare er åpnet i read 'r'"
     },
     {
         "question": "open(filnavn, 'w')",
@@ -625,7 +625,7 @@
             "Hvis filen finnes blir det lagt til på slutten"
         ],
         "answer": "Hvis filen ikke finnes blir den opprettet",
-        "explanation": "KOMMER"
+        "explanation": "'w' er skrive modus (write). Programmet vil her ønske å skrive til en fil, så om filen ikke finnes, så vil en fil bli opprettet slik at programmet kan skrive til filen."
     },
     {
         "question": "open(filnavn) eller open(filnavn, 'r')",
@@ -636,7 +636,7 @@
             "Hvis filen finnes gjøres unntak"
         ],
         "answer": "Hvis filen ikke finnes gjøres unntak",
-        "explanation": "KOMMER"
+        "explanation": "Om du prøver å åpne en fil som ikke eksisterer, så vil Python kaste en 'FileNotFoundError' unntak. For å unngå unntaket må du håndtere det i koden din med try/except"
     },
     {
         "question": "while betingelse : kropp",
@@ -647,7 +647,7 @@
             "Når betingelse evalueres til False avsluttes løkken med det samme"
         ],
         "answer": "Når betingelse evalueres til False avsluttes løkken med det samme",
-        "explanation": "KOMMER"
+        "explanation": "en while løkke er en løkke som utføres så lenge den evalueres til True. Med en gang løkken evalueres til False, så vil løkken stoppe."
     },
     {
         "question": "7 // 2",
@@ -658,6 +658,6 @@
             "3"
         ],
         "answer": "3",
-        "explanation": "KOMMER"
+        "explanation": "// operatoren kalles for gulvdeling (floor divisjon). Denne utfører divisjonen, runder ned til nærmeste hele tall og returnerer dette.\n7 // 2 = 3 # Fordi 7 delt på 2 er 3.5, og når vi runder ned til nærmeste hele tall, får vi 3"
     }
 ]
