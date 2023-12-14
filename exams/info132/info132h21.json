@@ -7,27 +7,30 @@
             "Skriver ut antal linjer i fil",
             "1"
         ],
-        "answer": "Skriver ut antall tegn i fil"
+        "answer": "Skriver ut antall tegn i fil",
+        "explanation": "# Skriver ut antall tegn i fil fordi:\nfil.read() # Leser hele innholdet i filen som en streng\nfor x in fil.read() # Itererer over hver karakter i strengen returnert av fil.read()\ni += 1 # Øker i med 1 for hver karakter i strengen"
     },
     {
-        "question": "[1, 3, 4].append(2)",
+        "question": "# Hva returneres her:\n[1, 3, 4].append(2)",
         "options": [
             "2",
             "None",
             "[1, 3, 4, 2]",
             "[1, 2, 3, 4]"
         ],
-        "answer": "None"
+        "answer": "None",
+        "explanation": "# Her returneres None fordi append() bare legger til på slutten av en liste, den returnerer ikke den modifiserte listen.\n # Så om du prøver dette sammen med print()\nprint([1, 3, 4,].append(2))\n # Så vil output bli None"
     },
     {
-        "question": "[1, 3, 4].remove(2)",
+        "question": "# Hva returneres her:\n[1, 3, 4].remove(2)",
         "options": [
             "None",
             "[1, 3]",
             "ValueError: ...",
             "[1, 4]"
         ],
-        "answer": "ValueError: ..."
+        "answer": "ValueError: ...",
+        "explanation": "# Her vil du få ValueError: ... fordi remove() fjerner første forekomst av elementet som er gitt som argument\n# I dette tilfellet så ser remove(2) etter tallet 2, og siden denne ikke finnes får vi en ValueError: ..."
     },
     {
         "question": "I Python hjelper navnerom og skop oss først og fremt med å holder orden på?",
@@ -37,7 +40,8 @@
             "Variabelverdier",
             "Syntaksfeil"
         ],
-        "answer": "Variabelverdier"
+        "answer": "Variabelverdier",
+        "explanation": "# Sammen hjelper navnerom (namespace) og skop (scope) oss med å organisere koden på en måte som forhindrer navnekonflikter og gjør det lettere å forstå hvor og hvordan variabler og funksjoner kan brukes."
     },
     {
         "question": "Hvordan blir uttrykket utført?\n2**3+8/4*2-9+11*4",
@@ -47,7 +51,8 @@
             "((2**3)+((8/4)*2))-(9+(11*4))",
             "(2**3)+((8/(4*2))-((9+11)*4))"
         ],
-        "answer": "(((2**3)+((8/4)*2))-9)+(11*4)"
+        "answer": "(((2**3)+((8/4)*2))-9)+(11*4)",
+        "explanation": "# Her er (((2**3)+((8/4)*2))-9)+(11*4) riktig på grunn av PEMDAS:\n(2**3) # Dette sikrer at eksponenten utføres først\n ((8/4)*2) # Dette sikrer at divisjonen 8/4 utføres før mulitplikasjonen med 2\n(((2**3) + ((8/4)*2)) - 9) # Dette er for å sikre at addisjonen utføres før subtraksjonen\n(((2**3) + ((8/4)*2)) - 9) + (11*4) # Dette er for å sikre at hele uttrykket til venstre utføres før multiplikasjonen på høyre side"
     },
     {
         "question": "3.14159 er ikke eller kan ikke brukes som?",
@@ -57,27 +62,30 @@
             "Et variabelnavn",
             "Et object"
         ],
-        "answer": "Et variabelnavn"
+        "answer": "Et variabelnavn",
+        "explanation": "# Variabelnavn i Python kan ikke starte med et tall. De må starte med en bokstav (A-Z, a-z) eller en understrek (_)."
     },
     {
-        "question": "11 % 3",
+        "question": "# Hva returneres her?\n11 % 3",
         "options": [
             "3",
             "2",
             "3.6667",
             "3.0"
         ],
-        "answer": "2"
+        "answer": "2",
+        "explanation": "Modulusoperatoren % returnerer resten av en divisjon som et heltall. Så med 11 % 3 så går 3 opp i 11, 3 hele ganger. Da er vi på 9 og har en rest på 2. Målet er å komme så nært 11 som mulig uten å gå over, mens vi øker med 3 hver gang."
     },
     {
-        "question": "'5' + 3 * '2'",
+        "question": "# Hva returneres her:\n'5' + 3 * '2'",
         "options": [
             "'11'",
             "'16'",
             "'533'",
             "'5222'"
         ],
-        "answer": "'5222'"
+        "answer": "'5222'",
+        "explanation": "PEMDAS, multiplikasjon over addisjon. Når multiplikasjon brukes med en streng, så vil strengen bli gjentatt like mange ganger som det ganges med. Derfor er 3 * '2' = '222'\n Addisjon legger en streng til en annen, så da blir '5' + '222' = '5222'"
     },
     {
         "question": "Hva er ikke en innebygget funksjon i Python (altså i biblioteket builtins)?",
@@ -87,7 +95,8 @@
             "dir",
             "print"
         ],
-        "answer": "random"
+        "answer": "random",
+        "explanation": "random er en del av random-modulen som må importeres før den kan brukes"
     },
     {
         "question": "'xxx %.4f yyy' % 2.71828\nog\nf'xxx {2.71828:.5} yyy\ngir den samme tegnstrengen",
@@ -97,7 +106,8 @@
             "'xxx 2.7182 yyy'",
             "'xxx 2.71828 yyy'"
         ],
-        "answer": "'xxx 2.7183 yyy'"
+        "answer": "'xxx 2.7183 yyy'",
+        "explanation": "Her er 'xxx 2.7183 yyy' riktig fordi 'xxx %.4f yyy' % 2.71828 bruker den gamle strengformateringsstilen hvor %.4f betyr at tallet skal formateres som et flyttall med 4 desimaler\nf'xxx {2.71828:.5} yyy bruker den nye stilen hvor :.5 betyr at tallet skal formateres med 5 totalt 5 tall."
     },
     {
         "question": "break i en Python-løkke",
@@ -107,17 +117,20 @@
             "Gjør runden ferdig og avslutter løkken",
             "Avslutter runden med det samme men fortsetter løkken"
         ],
-        "answer": "Avslutter løkken med det samme"
+        "answer": "Avslutter løkken med det samme",
+        "explanation": "break avslutter løkken med det samme en viss betingelse er nåd, for eksempel:\nfor i in range(10)\n    if i == 5:\n        break\n    print(i)\nHer skal løkken egentlig gå 10 ganger, men på grunn av break så vil løkken stoppe etter 5 iterasjoner som skriver ut tallene 0 - 4"
+
     },
     {
         "question": "Hva slags programsetning eller -utrykk er brukt her:\nif x < 0:\n  print('Tallet er for lite.')\nelif x > 10:\n  print('Tallet er for stort.')\nelse:\n  print('Tallet er ok.')",
         "options": [
             "Betinget uttrykk ('conditional expression')",
             "Unntak",
-            "Betinger alternativ utførelse ('chained conditional')",
+            "Betinget alternativ utførelse ('chained conditional')",
             "Avkortet evaluering ('short-circuit evaluation')"
         ],
-        "answer": "Betinger alternativ utførelse ('chained conditional')"
+        "answer": "Betinget alternativ utførelse ('chained conditional')",
+        "explanation": "Betinget alternativ utførelse ('chained conditional' har mer enn to mulige utfall, og bruker elif -setninger for å sjekke flere betingelser.)"
     },
     {
         "question": "Hva slags programsetning eller -utrykk er brukt her:\nx-y if x>y else 0",
@@ -127,7 +140,8 @@
             "Avkortet evaluering ('short-circuit evaluation')",
             "Unntak"
         ],
-        "answer": "Betinget uttrykk ('conditional expression')"
+        "answer": "Betinget uttrykk ('conditional expression')",
+        "explanation": "Et betinget uttrykk er en måte å velge mellom to verdier basert på en betingelse. Det er en kortere version av en if-else-setning."
     },
     {
         "question": "Høy presedens utføres først. Hva er riktig rekkefølge?",
@@ -137,7 +151,8 @@
             "and > or > not",
             "not > or > and"
         ],
-        "answer": "not > and > or"
+        "answer": "not > and > or",
+        "explanation": "not kommer først fordi den bare opererer på en operand\nand er nr2 fordi den er mer restiktiv enn or"
     },
     {
         "question": "Høy presedens utføres først. Hva er riktig rekkefølge?",
@@ -147,7 +162,8 @@
             "logiske operatorer > sammenligninger > PEMDAS",
             "PEMDAS > logiske operatorer > sammenligninger"
         ],
-        "answer": "PEMDAS > sammenligninger > logiske operatorer"
+        "answer": "PEMDAS > sammenligninger > logiske operatorer",
+        "explanation": "PEMDAS utføres først fordi du vil gjøre matematiske beregninger først.\nSammenligninger har høyere presedens enn logiske operatorer fordi du vi utføre sammenligningene av verdiene før du bruker resultatene i logiske uttrykk."
     },
     {
         "question": "Hvilken type returneres av programsetningen:\ninput('Hva er din kroppsvekt:')",
@@ -157,7 +173,8 @@
             "str",
             "float"
         ],
-        "answer": "str"
+        "answer": "str",
+        "explanation": "input() returnerer alltid en streng. Om du vil returnere noe annet, for eksempel et tall, må du legge input() inn i en int() funksjon: int(input())."
     },
     {
         "question": "Hvilket er ikke et reservert ord i Python?",
@@ -167,7 +184,8 @@
             "value",
             "del"
         ],
-        "answer": "value"
+        "answer": "value",
+        "explanation": "Value er ikke et reservert ord, og kan derfor brukes som navn til variabler, funksjoner eller classer."
     },
     {
         "question": "Hva er resultatet av int('3.14159')?",
@@ -177,7 +195,8 @@
             "3",
             "3.14159"
         ],
-        "answer": "ValueError: ..."
+        "answer": "ValueError: ...",
+        "explanation": "Dette resulterer i ValueError fordi du ikke kan gjøre mer enn en konvertering om gangen. For å konvertere dette til et heltall må man først konvertere til et desimaltall med float(), også til heltall med int(). Kan eventuelt bruke int(float('3.14159'))."
     },
     {
         "question": "Overbelastning i Python-kode vil si at?",
@@ -187,7 +206,8 @@
             "Koden er for stor og tung å lese",
             "Koden krever for mye ressurser"
         ],
-        "answer": "En operator har ulik betydning i ulike sammenhenger"
+        "answer": "En operator har ulik betydning i ulike sammenhenger",
+        "explanation": "Et eksempel på operatoroverbelastning er + operatoren. Brukt sammen med to strenger så trekkes strengene samme 'a' + 'b' = 'ab'\nMed heltall så legges tallene sammen 1 + 1 = 2\nDette er eksempel på ulik betydning i ulike sammenhenger."
     },
     {
         "question": "I programmsetningen\nprint('Hallo', 'verden', end='!')\ner det mest riktig å kalle print()",
@@ -197,7 +217,8 @@
             "En prosedyre",
             "En variabel"
         ],
-        "answer": "En prosedyre"
+        "answer": "En prosedyre",
+        "explanation": "Python har ikke et klart skille mellom prosedyrer og funksjoner slik mange eldre programmeringsspråk har, så det riktige svaret kunne også vært funksjon.\nEt utrykk er en kombinasjon av verdier, variabler, operatorer og funksjons kall\nEt argument er verdier som blir sendt til funksjonen når denne blir kalt\nEn variabel er en lagringsplass i minnet som holder en verdi"
     },
     {
         "question": "continue i en Python-løkke",
@@ -207,7 +228,8 @@
             "Avslutter løkken med det samme",
             "Gjør runden ferdig og fortsetter løkken"
         ],
-        "answer": "Avslutter runden med det samme men fortsetter løkken"
+        "answer": "Avslutter runden med det samme men fortsetter løkken",
+        "explanation": "continue avslutter umiddelbart den nåværende iterasjonen, og løkken går videre til neste iterasjon. Eksempel:\nfor i in range(5):\n    if i = 2:\n        continue\n    print(i)\nHer vil tallene 0, 1, 3 og 4 bli skrevet ut fordi løkken aldri kom til print() når i var 2."
     },
     {
         "question": "I Python betyr nonlocal x at",
@@ -217,27 +239,30 @@
             "Vi skal bruke x i det globale skopet",
             "x er en global variabel"
         ],
-        "answer": "Vi skal bruke x i nærmeste omsluttende skop"
+        "answer": "Vi skal bruke x i nærmeste omsluttende skop",
+        "explanation": "def yttre():\n    x = 10\n    def indre():\n        nonlocal x\n        x = 20\n    indre()\n    print(x)\nytre() # output blir da 20\nI eksempelet er x definert i ytre() funksjonen. I indre() funksjonen bruker vi nonlocal for å indikere at vi refererer til x i ytre(). Når vi da endrer verdien til x i indre(), så endres verdien i ytre() også."
     },
     {
-        "question": "I programlinjen\ndef skriv_persondata(p, lengde='cm', vekt='kg'):\ner 'kg'?",
+        "question": "Hva er 'kg' i programlinjen under:\ndef skriv_persondata(p, lengde='cm', vekt='kg')",
         "options": [
             "En parameter",
             "Et argument",
             "En standardverdi",
             "En opsjon"
         ],
-        "answer": "En standardverdi"
+        "answer": "En standardverdi",
+        "explanation": "Her vil vi kunne kalle på funksjonen skriv_persondata() uten å trenge argumenter for både lengde og vekt. Om argumentet til vekt utblir i kallet, så vil vekt automatisk settes til 'kg.'"
     },
     {
-        "question": "I programlinjen\ndef skriv_persondata(p, lengde='cm', vekt='kg'):\ner p?",
+        "question": "Hva er p i programlinjen under:\ndef skriv_persondata(p, lengde='cm', vekt='kg')",
         "options": [
             "En opsjon",
             "Et argument",
             "En standardverdi",
             "En parameter"
         ],
-        "answer": "En parameter"
+        "answer": "En parameter",
+        "explanation": "Når en funksjon blir kalt, forventes det at en verdi(argument) blir gitt for p, og denne verdien vil bli brukt inn i funksjonen hvor p er referert. "
     },
     {
         "question": "Hva slags programmeringsteknikk er brukt her:\nif stasjon in målinger and 'Torg' in målinger[stasjon]:",
@@ -247,17 +272,19 @@
             "Unntak",
             "Avkortet evaluering ('short-circuit evaluation')"
         ],
-        "answer": "Avkortet evaluering ('short-circuit evaluation')"
+        "answer": "Avkortet evaluering ('short-circuit evaluation')",
+        "explanation": "Når du bruker and operatoren, hvis det første uttrykket er False, vil det andre uttrykket ikke engang bli evaluert, fordi hele and utrykket vil være False uansett. Dette er kjent som avkortet evaluering ('short-circuit evaluering')"
     },
     {
-        "question": "{'A', 'b', 'r', 'a'}|{'k', 'a', 'd', 'a', 'b', 'r', 'a'} kan gi",
+        "question": "Hva gir følgende:\n{'A', 'b', 'r', 'a'}|{'k', 'a', 'd', 'a', 'b', 'r', 'a'}",
         "options": [
             "{'a', 'k', 'd', 'A', 'r', 'b'}",
             "{'b', 'a', 'r'}",
             "SyntaxError: ...",
             "True"
         ],
-        "answer": "{'a', 'k', 'd', 'A', 'r', 'b'}"
+        "answer": "{'a', 'k', 'd', 'A', 'r', 'b'}",
+        "explanation": "I Python representerer | operatoren union av to sett. Unionen av to sett er et nytt sett som inneholder alle elementene fra begge settene, men uten duplicater."
     },
     {
         "question": "En Python-mengde set() er",
@@ -267,7 +294,8 @@
             "En uforandrbar sekvenstype",
             "Uforandrbar og ikke en sekvenstype"
         ],
-        "answer": "Forandrbar, men ikke en sekvenstype"
+        "answer": "Forandrbar, men ikke en sekvenstype",
+        "explanation": "set() er forandbar, altså du kan endre på innholdet, men alt innholdet i et set() blir lagret i tilfeldig rekkefølge, og støtter derfor ikke indeksering. Innholdet vi skriver ut fra et set() er altså ikke i sekvens, som da vil si at om du skriver ut samme set() to ganger, så vil rekkefølgen på det som skrives ut være forskjellig."
     },
     {
         "question": "For å lese inn en tegnstreng fra brukeren kan vi instansiere tkinter-klassen",
@@ -277,7 +305,8 @@
             "Label",
             "Input"
         ],
-        "answer": "Entry"
+        "answer": "Entry",
+        "explanation": "Frame er en container widget som brukes til å organisere andre widgets\nEntry er en widget som brukes til å lage tekstfelt hvor brukere kan skrive inn tekst\nLabel er en widget som brukes til å vise tekst eller bilder\nInput er ikke en widget i tkinter. input() derimot er en innebydg funksjon i Python som returnerer en streng skrevet inn av en bruker."
     },
     {
         "question": "Tre sentrale begrep i hendelsesdrevet programmering ('event-driven programming') er",
@@ -287,7 +316,8 @@
             "Object, variabel og verdi",
             "Vinduer, rammer og elementer"
         ],
-        "answer": "Skjermelement, hendelse og hendelsehåndterer"
+        "answer": "Skjermelement, hendelse og hendelsehåndterer",
+        "explanation": "Skjermelement er en interaktiv komponent på skjermen som brukeren kan samhandle med. For eksempel en knapp, tekstboks, rullegardinmeny osv.\nHendelse er en handling eller forekomst som systemet kan gjenkjenne og reagere på. Eksempel museklikk, tastetrykk osv.\nHendelseshåndterer er en funksjon eller metode som blir kalt når en bestemt hendelse oppstår."
     },
     {
         "question": "Hvilken er ikke et GUI-element (widget) i tkinter?",
@@ -297,7 +327,8 @@
             "Button",
             "Mouse"
         ],
-        "answer": "Mouse"
+        "answer": "Mouse",
+        "explanation": "Frame, TopLevel og Button er alle klasser som brukes til å lage forskjellige GUI-elementer. Mouse er en enhet som brukes til å samhandle med GUI-elementer. "
     },
     {
         "question": "Når vi endrer verdien til en funksjonsparameter i kroppen til en funksjon, endres også den overførte argumentverdien?",
@@ -307,17 +338,19 @@
             "Ja, hvis argumentet har globalt skop",
             "Ja, uansett"
         ],
-        "answer": "Ja, men ikke hvis endringen skjer ved tilordning til parametervariablen"
+        "answer": "Ja, men ikke hvis endringen skjer ved tilordning til parametervariablen",
+        "explanation": "Om du endrer verdien til en funksjonsparameter ved å tilordne en ny verdi, vil det ikke endre den opprinnelige argumentverdien som ble sendt til funksjonen. Dette er forid funksjonen arbeider med en kopi av referansen, ikke den opprinnelige referansen. Men, hvis funksjonsparameteren er en foranderlig datatype, og du endrer innholdet ac denne datatypen, vil endringen være synlig utenfor funksjonen. Dette fordi du endrer faktisk objektet som referansen peker på, ikke referansen selv."
     },
     {
-        "question": "En Python variabel kan *ikke* inneholde",
+        "question": "En Python variabel kan ikke inneholde",
         "options": [
             "Den kan inneholde alle disse",
             "Et objekt",
             "En verdi",
             "En funksjon"
         ],
-        "answer": "Den kan inneholde alle disse"
+        "answer": "Den kan inneholde alle disse",
+        "explanation": "Det er ingen innebygde begrensninger på hva en variabel kan inneholde. Men, det er begrensninger på hva en variabel kan hete (for eksempel kan den ikke starte med et tall), og begrensning på hva den kan referere til (for eksempel skop)."
     },
     {
         "question": "Det mest presise er å si at en Python-klasse kan definere",
@@ -327,7 +360,8 @@
             "Metoder og variabler",
             "Metoder og attributter"
         ],
-        "answer": "Metoder og attributter"
+        "answer": "Metoder og attributter",
+        "explanation": "Metoder er funksjoner som er definert inne i en klasse. De brukes til å representere oppførselen til en instans av klassen\nAttributter er variabler som er definert inne i en klasse. De brukes til å representere tilstanden til en instans av klassen."
     },
     {
         "question": "[[ bokstav + str(tall) for tall in [1, 2, 3]] for bokstav in ['A', 'B', 'C']]",
@@ -335,9 +369,10 @@
             "[['A1', 'B1', 'C1'], ['A2', 'B2', 'C2'], ['A3', 'B3', 'C3']]",
             "[['A1', 'A2', 'A3'], ['B1', 'B2', 'C3'], ['C1', 'C2', 'C3']]",
             "['A1', 'B1', 'C1'], ['A2', 'B2', 'C2'], ['A3', 'B3', 'C3']",
-            "['A1', 'B1', 'C1'], ['A2', 'B2', 'C2'], ['A3', 'B3', 'C3']"
+            "['A1', 'A2', 'A3'], ['B1', 'B2', 'B3'], ['C1', 'C2', 'C3']"
         ],
-        "answer": "[['A1', 'A2', 'A3'], ['B1', 'B2', 'C3'], ['C1', 'C2', 'C3']]"
+        "answer": "[['A1', 'A2', 'A3'], ['B1', 'B2', 'C3'], ['C1', 'C2', 'C3']]",
+        "explanation": "Denne koden genererer en liste med lister. Den begynner med A, itererer gjennom alle tallene slik at vi får [A1, A2, A3]. Går så til B og gjør det samme."
     },
     {
         "question": "[x % 3 for x in range(0, 21, 7)]",
@@ -347,7 +382,8 @@
             "[0, 1, 2]",
             "[1, 3, 5]"
         ],
-        "answer": "[0, 1, 2]"
+        "answer": "[0, 1, 2]",
+        "explanation": "range(0, 21, 7) # Lager en sekvens av tall som starter på 0 og går opp til (men ikke inkludert) 21, i steg av 7, så tallene vil være 0, 7, 14\nx % 3 # En operasjon som utføres på hvert element i sekvensen\n0 % 3 = 0\n7 % 3 = 1\n14 % 3 = 2\nSom da gir oss svaret [0, 1, 2]"
     },
     {
         "question": "len(['løping', 'spinning', 'styrke']) og 9//3 er?",
@@ -357,7 +393,8 @@
             "Identiske, men ikke ekvivalente",
             "Ekvivalente, men aldri identiske"
         ],
-        "answer": "Ekvivalente og kanskje identiske"
+        "answer": "Ekvivalente og kanskje identiske",
+        "explanation": "Ekvivalent i programmering refererer til to uttrykk som evaluerer til samme verdi.\nIdentisk betyr at de er nøyaktig de samme, ikke bare i verdi, men også i form\nSå uttrykkene er ekvivalente fordi begge evaluerer til samme verdi, de er ikke identiske i dette tilfelle fordi formen ikke er den samme (funksjon som returnerer lengden på en list, og den andre er en heltallsdivisjon), men om formene hadde vært lik, så kunne de vært identiske, derfor er ekvivalente og kanskje identiske riktig"
     },
     {
         "question": "l1 = ['løping', 'spinning', 'styrke']\nl2 = l1[:]\nNå er l1 og l2?",
@@ -367,7 +404,8 @@
             "Både ekvivalente og identiske",
             "Ekvivalente, men neppe identiske"
         ],
-        "answer": "Ekvivalente, men aldri identiske"
+        "answer": "Ekvivalente, men aldri identiske",
+        "explanation": "l1 og l2 er nå ekvivalente, men de er ikke identiske fordi de er to forskjellige objekter. Endringer i den ene vil ikke påvirke den andre. Du kan sjekke ved å skrive:\nprint(l1 is l2) # Som vil gi False"
     },
     {
         "question": "for x in open(filnavn, 'r'):",
@@ -377,7 +415,8 @@
             "Går i løkke gjennom filen tegn for tegn",
             "Går i løkken gjennom filen linje for linje"
         ],
-        "answer": "Går i løkken gjennom filen linje for linje"
+        "answer": "Går i løkken gjennom filen linje for linje",
+        "explanation": "KOMMER"
     },
     {
         "question": "'Kardemomme'[-2:-9:-3]",
@@ -387,7 +426,8 @@
             "'mmr'",
             "'mea'"
         ],
-        "answer": "'mmr'"
+        "answer": "'mmr'",
+        "explanation": "KOMMER"
     },
     {
         "question": "'mom' in 'Kardemomme'",
@@ -397,7 +437,8 @@
             "True",
             "False"
         ],
-        "answer": "True"
+        "answer": "True",
+        "explanation": "KOMMER"
     },
     {
         "question": "['A', 'B', 'C'].remove('B')",
@@ -407,7 +448,8 @@
             "None",
             "['A', 'C']"
         ],
-        "answer": "None"
+        "answer": "None",
+        "explanation": "KOMMER"
     },
     {
         "question": "def registrer(*deltagere):",
@@ -417,7 +459,8 @@
             "deltagere leses fra tastatur hvis nødvendig",
             "deltagere er en sekvens av ukjent lengde"
         ],
-        "answer": "deltagere er en sekvens av ukjent lengde"
+        "answer": "deltagere er en sekvens av ukjent lengde",
+        "explanation": "KOMMER"
     },
     {
         "question": "for i in range(1, 6, 2):\n  if i%2 == 1:\n    print(i**2, end='')",
@@ -427,7 +470,8 @@
             "9 25 49",
             "1"
         ],
-        "answer": "1 9 25"
+        "answer": "1 9 25",
+        "explanation": "KOMMER"
     },
     {
         "question": "I Python er dette: 2.71828",
@@ -437,7 +481,8 @@
             "En variabel",
             "Et desimaltall"
         ],
-        "answer": "et desimaltall"
+        "answer": "et desimaltall",
+        "explanation": "KOMMER"
     },
     {
         "question": "x is y vil si at x og y er",
@@ -447,7 +492,8 @@
             "Ekvivalente og identiske",
             "Identiske, men ikke nødvendigvis ekvivalente"
         ],
-        "answer": "Ekvivalente og identiske"
+        "answer": "Ekvivalente og identiske",
+        "explanation": "KOMMER"
     },
     {
         "question": "x == y vil si at x og y er",
@@ -457,7 +503,8 @@
             "Ekvivalente og ikke identiske",
             "Ekvivalente og identiske"
         ],
-        "answer": "Ekvivalente men ikke nødvendigvis identiske"
+        "answer": "Ekvivalente men ikke nødvendigvis identiske",
+        "explanation": "KOMMER"
     },
     {
         "question": "type(lambda x: x*x)",
@@ -467,7 +514,8 @@
             "<class 'str'>",
             "<class 'function'>"
         ],
-        "answer": "<class 'function'>"
+        "answer": "<class 'function'>",
+        "explanation": "KOMMER"
     },
     {
         "question": "type(bool)",
@@ -477,7 +525,8 @@
             "<class 'type'>",
             "<class 'bultin_function_or_method'>"
         ],
-        "answer": "<class 'type'>"
+        "answer": "<class 'type'>",
+        "explanation": "KOMMER"
     },
     {
         "question": "eval('(lambda x: x // 2)(5)') returnerer",
@@ -487,7 +536,8 @@
             "'(lambda x: x // 2)(5)'",
             "5"
         ],
-        "answer": "2"
+        "answer": "2",
+        "explanation": "KOMMER"
     },
     {
         "question": ".grid() eller .pack()",
@@ -497,7 +547,8 @@
             "En av dem (eller en lignende metode) må kalles før et element vises",
             "Er i praksis valgfri for alle elementer"
         ],
-        "answer": "En av dem (eller en lignende metode) må kalles før et element vises"
+        "answer": "En av dem (eller en lignende metode) må kalles før et element vises",
+        "explanation": "KOMMER"
     },
     {
         "question": "list({'aerobics': 2, 'løping': 4, 'yoga': 1}.items())[1]",
@@ -507,7 +558,8 @@
             "4",
             "Key error: 1"
         ],
-        "answer": "('løping', 4)"
+        "answer": "('løping', 4)",
+        "explanation": "KOMMER"
     },
     {
         "question": "{'aerobics': 2, 'løping': 4, 'yoga': 1}['løping']",
@@ -517,7 +569,8 @@
             "{'løping': 4}",
             "4"
         ],
-        "answer": "4"
+        "answer": "4",
+        "explanation": "KOMMER"
     },
     {
         "question": "{'aerobics': 2, 'løping': 4, 'yoga': 1}[4]",
@@ -527,7 +580,8 @@
             "løping",
             "Key error: '4'"
         ],
-        "answer": "Key error: '4'"
+        "answer": "Key error: '4'",
+        "explanation": "KOMMER"
     },
     {
         "question": "sorted(['A', 'C', 'b', 'D'] == ['A', 'C', 'D', 'b'])",
@@ -537,7 +591,8 @@
             "True",
             "SyntaxError: ..."
         ],
-        "answer": "True"
+        "answer": "True",
+        "explanation": "KOMMER"
     },
     {
         "question": "['A', 'C', 'b', 'D'].sort() == ['A', 'C', 'D', 'b']",
@@ -547,7 +602,8 @@
             "False",
             "SyntaxError: ..."
         ],
-        "answer": "False"
+        "answer": "False",
+        "explanation": "KOMMER"
     },
     {
         "question": "fil.close()",
@@ -557,7 +613,8 @@
             "Nødvendig for append og write",
             "Kun nødvendig for write"
         ],
-        "answer": "Nødvendig for append og write"
+        "answer": "Nødvendig for append og write",
+        "explanation": "KOMMER"
     },
     {
         "question": "open(filnavn, 'w')",
@@ -567,7 +624,8 @@
             "Hvis filen ikke finnes blir den opprettet",
             "Hvis filen finnes blir det lagt til på slutten"
         ],
-        "answer": "Hvis filen ikke finnes blir den opprettet"
+        "answer": "Hvis filen ikke finnes blir den opprettet",
+        "explanation": "KOMMER"
     },
     {
         "question": "open(filnavn) eller open(filnavn, 'r')",
@@ -577,7 +635,8 @@
             "Hvis filen ikke finnes blir den opprettet",
             "Hvis filen finnes gjøres unntak"
         ],
-        "answer": "Hvis filen ikke finnes gjøres unntak"
+        "answer": "Hvis filen ikke finnes gjøres unntak",
+        "explanation": "KOMMER"
     },
     {
         "question": "while betingelse : kropp",
@@ -587,7 +646,8 @@
             "Når betingelse evalueres til True avsluttes løkken med det samme",
             "Når betingelse evalueres til False avsluttes løkken med det samme"
         ],
-        "answer": "Når betingelse evalueres til False avsluttes løkken med det samme"
+        "answer": "Når betingelse evalueres til False avsluttes løkken med det samme",
+        "explanation": "KOMMER"
     },
     {
         "question": "7 // 2",
@@ -597,6 +657,7 @@
             "3.5",
             "3"
         ],
-        "answer": "3"
+        "answer": "3",
+        "explanation": "KOMMER"
     }
 ]
