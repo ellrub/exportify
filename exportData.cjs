@@ -1,5 +1,5 @@
 const admin = require('firebase-admin');
-const serviceAccount = require('../../../../ruben/Development/Examify/ExamifyFirebaseAdmin.json');
+const serviceAccount = require('../../../../ruben/Development/exportExamify/ExamifyFirebaseAdmin.json');
 const data = require('./exams/info132/info132h21.json');
 
 admin.initializeApp({
