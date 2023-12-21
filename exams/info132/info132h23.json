@@ -1,0 +1,673 @@
+[
+    {
+        "question": "Hva er resultatet av:\nint('2.71828')",
+        "options": [
+            "ValueError: ...",
+            "3",
+            "2",
+            "2.71828"
+        ],
+        "answer": "ValueError: ...",
+        "explanation": "Dette resulterer i ValueError: ... fordi du ikke kan gjøre mer enn en konvertering om gangen. For å konvertere dette til et heltall må man først konvertere til et desimaltall med float(), også til heltall med int(). Kan eventuelt bruke int(float('3.14159'))."
+    },
+    {
+        "question": "i = 64; j = 8**2\nNå er i og j?",
+        "options": [
+            "Identiske, men ikke ekvivalente",
+            "Ekvivalente og identiske",
+            "Ekvivalente, men aldri identiske",
+            "Hverken ekvivalente eller identiske"
+        ],
+        "answer": "Ekvivalente, men aldri identiske",
+        "explanation": "i og j er nå ekvivalente, men de er ikke identiske fordi de er to forskjellige objekter. Endringer i den ene vil ikke påvirke den andre. Du kan sjekke ved å skrive:\nprint(i is j) # Som vil gi False"
+    },
+    {
+        "question": "I Python kan 2023 ikke være?",
+        "options": [
+            "Et objekt",
+            "Et litteral",
+            "Et variabelnavn",
+            "En verdi"
+        ],
+        "answer": "Et variabelnavn",
+        "explanation": "Variabelnavn i Python kan ikke starte med et tall. De må starte med en bokstav (A-Z, a-z) eller en understrek (_)."
+    },
+    {
+        "question": "I Python er dette:\n3.14159",
+        "options": [
+            "en tegnstreng",
+            "en variabel",
+            "et heltall",
+            "et flyttall / desimaltall"
+        ],
+        "answer": "et flyttall / desimaltall",
+        "explanation": "Desimaltall, eller float som det også heter"
+    },
+    {
+        "question": "int(3*'3' + 2*2*'2')",
+        "options": [
+            "3332222",
+            "944",
+            "17",
+            "SyntaxError: ..."
+        ],
+        "answer": "3332222",
+        "explanation": "Her vil det som er inni int() funksjonen bli utført først\n3*'3' resulterer i en string '333'\n2*2*'2' resulterer i en string '2222'\nSå legge de to sammen '333' + '2222' som bilr en ny string '3332222'\nint() funksjonen gjør så dette om til tallet 3332222"
+    },
+    {
+        "question": "Hva blir resultatet av\n17 % 4",
+        "options": [
+            "1",
+            "4.0",
+            "4.25",
+            "4"
+        ],
+        "answer": "1",
+        "explanation": "Modulusoperatoren % returnerer resten av en divisjon som et heltall. Så med 17 % 4 så går 4 opp i 17, 4 hele ganger. Da er vi på 16 og har en rest på 1 for å nå 17. Målet er å komme så nært 17 som mulig uten å gå over, mens vi øker med 4 hver gang."
+    },
+    {
+        "question": "Hva blir resultatet av:\n13 // 4",
+        "options": [
+            "3.0",
+            "1",
+            "3.25",
+            "3"
+        ],
+        "answer": "3",
+        "explanation": "// operatoren kalles for gulvdeling (floor divisjon). Denne utfører divisjonen, runder ned til nærmeste hele tall og returnerer dette.\n13 // 4 = 3 # Fordi 13 delt på 4 er 3.25, og når vi runder ned til nærmeste hele tall, får vi 3."
+    },
+    {
+        "question": "Hva blir resultatet av:\n(1, 2, 4).remove(3)",
+        "options": [
+            "None",
+            "AttributeError: ...",
+            "(1, 2, 4)",
+            "ValueError: ..."
+        ],
+        "answer": "AttributeError: ...",
+        "explanation": "Tupller er uforandrbare, som betyr at de ikke kan endres etter at de er laget. Derfor har ikke tuppler en .remove() metode. Når du prøver å kalle .remove() med en tuppel, så vil du derfor få en AttributeError."
+    },
+    {
+        "question": "Hva blir resultatet av:\n[1, 3, 4].append(2)",
+        "options": [
+            "AttributeError: ...",
+            "2",
+            "None",
+            "[1, 3, 4, 2]"
+        ],
+        "answer": "None",
+        "explanation": "Her returneres None fordi append() bare legger til på slutten av en liste, den returnerer ikke den modifiserte listen.\nSå om du prøver dette sammen med print()\nprint([1, 3, 4,].append(2))\n # Så vil output bli None"
+    },
+    {
+        "question": "Anta at fil er åpnet for lesning. Hva skrives ut her?\ni = 0\nfor x in fil.readlines():\n    i += 1\nprint(i)",
+        "options": [
+            "Skriver ut antall linjer i fil",
+            "Skriver ut antall tegn i fil",
+            "SyntaxError: ... fil.readlines() has no argument",
+            "1"
+        ],
+        "answer": "Skriver ut antall linjer i fil",
+        "explanation": "Skriver ut antall linjer i fil fordi:\nfil.readlines() returnerer en liste over alle linjene i filen\nfor x in fil.readlines() itererer over listen\ni += 1 øker i med 1 for hver linje i filen"
+    },
+    {
+        "question": "",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "answer": "",
+        "explanation": ""
+    },
+    {
+        "question": "",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "answer": "",
+        "explanation": ""
+    },
+    {
+        "question": "",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "answer": "",
+        "explanation": ""
+    },
+    {
+        "question": "",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "answer": "",
+        "explanation": ""
+    },
+    {
+        "question": "",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "answer": "",
+        "explanation": ""
+    },
+    {
+        "question": "",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "answer": "",
+        "explanation": ""
+    },
+    {
+        "question": "",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "answer": "",
+        "explanation": ""
+    },
+    {
+        "question": "",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "answer": "",
+        "explanation": ""
+    },
+    {
+        "question": "",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "answer": "",
+        "explanation": ""
+    },
+    {
+        "question": "",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "answer": "",
+        "explanation": ""
+    },
+    {
+        "question": "",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "answer": "",
+        "explanation": ""
+    },
+    {
+        "question": "",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "answer": "",
+        "explanation": ""
+    },
+    {
+        "question": "",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "answer": "",
+        "explanation": ""
+    },
+    {
+        "question": "",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "answer": "",
+        "explanation": ""
+    },
+    {
+        "question": "",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "answer": "",
+        "explanation": ""
+    },
+    {
+        "question": "",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "answer": "",
+        "explanation": ""
+    },
+    {
+        "question": "",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "answer": "",
+        "explanation": ""
+    },
+    {
+        "question": "",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "answer": "",
+        "explanation": ""
+    },
+    {
+        "question": "",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "answer": "",
+        "explanation": ""
+    },
+    {
+        "question": "",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "answer": "",
+        "explanation": ""
+    },
+    {
+        "question": "",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "answer": "",
+        "explanation": ""
+    },
+    {
+        "question": "",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "answer": "",
+        "explanation": ""
+    },
+    {
+        "question": "",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "answer": "",
+        "explanation": ""
+    },
+    {
+        "question": "",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "answer": "",
+        "explanation": ""
+    },
+    {
+        "question": "",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "answer": "",
+        "explanation": ""
+    },
+    {
+        "question": "",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "answer": "",
+        "explanation": ""
+    },
+    {
+        "question": "",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "answer": "",
+        "explanation": ""
+    },
+    {
+        "question": "",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "answer": "",
+        "explanation": ""
+    },
+    {
+        "question": "",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "answer": "",
+        "explanation": ""
+    },
+    {
+        "question": "",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "answer": "",
+        "explanation": ""
+    },
+    {
+        "question": "",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "answer": "",
+        "explanation": ""
+    },
+    {
+        "question": "",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "answer": "",
+        "explanation": ""
+    },
+    {
+        "question": "",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "answer": "",
+        "explanation": ""
+    },
+    {
+        "question": "",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "answer": "",
+        "explanation": ""
+    },
+    {
+        "question": "",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "answer": "",
+        "explanation": ""
+    },
+    {
+        "question": "",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "answer": "",
+        "explanation": ""
+    },
+    {
+        "question": "",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "answer": "",
+        "explanation": ""
+    },
+    {
+        "question": "",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "answer": "",
+        "explanation": ""
+    },
+    {
+        "question": "",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "answer": "",
+        "explanation": ""
+    },
+    {
+        "question": "",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "answer": "",
+        "explanation": ""
+    },
+    {
+        "question": "",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "answer": "",
+        "explanation": ""
+    },
+    {
+        "question": "",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "answer": "",
+        "explanation": ""
+    },
+    {
+        "question": "",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "answer": "",
+        "explanation": ""
+    },
+    {
+        "question": "",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "answer": "",
+        "explanation": ""
+    },
+    {
+        "question": "",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "answer": "",
+        "explanation": ""
+    },
+    {
+        "question": "",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "answer": "",
+        "explanation": ""
+    },
+    {
+        "question": "",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "answer": "",
+        "explanation": ""
+    },
+    {
+        "question": "",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "answer": "",
+        "explanation": ""
+    },
+    {
+        "question": "",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "answer": "",
+        "explanation": ""
+    },
+    {
+        "question": "",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "answer": "",
+        "explanation": ""
+    },
+    {
+        "question": "",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "answer": "",
+        "explanation": ""
+    }
+]
