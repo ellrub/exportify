@@ -110,114 +110,114 @@
         "explanation": "Skriver ut antall linjer i fil fordi:\nfil.readlines() returnerer en liste over alle linjene i filen\nfor x in fil.readlines() itererer over listen\ni += 1 øker i med 1 for hver linje i filen"
     },
     {
-        "question": "",
+        "question": "'Programmering'[:1:-3] gir hva som resultat?",
         "options": [
-            "",
-            "",
-            "",
-            ""
+            "'grmg'",
+            "rogrammer",
+            "grmgP",
+            "' '"
         ],
-        "answer": "",
-        "explanation": ""
+        "answer": "' '",
+        "explanation": "Slicing formated er [start:stop:steg], så om vi skal stoppe på index 1, men gå bakover 3 pr gang, så vil vi få en tom string"
     },
     {
-        "question": "",
+        "question": "'arb' in 'Abrakadabra' gir hva som resultat?",
         "options": [
-            "",
-            "",
-            "",
-            ""
+            "True",
+            "ValueError: ...",
+            "False",
+            "None"
         ],
-        "answer": "",
-        "explanation": ""
+        "answer": "False",
+        "explanation": "Dette gir False fordi 'arb' ikke er å finne i strengen."
     },
     {
-        "question": "",
+        "question": "list('Abkrakadabra').sort() == ['A', 'b', 'k', 'r', 'a', 'k', 'a', 'd', 'a', 'b', 'r', 'a'] gir hva som resultat?",
         "options": [
-            "",
-            "",
-            "",
-            ""
+            "SyntaxError: ...",
+            "ValueError: ...",
+            "True",
+            "False"
         ],
-        "answer": "",
-        "explanation": ""
+        "answer": "False",
+        "explanation": "Resultatet blir False fordi .sort() sorterer listen på plassen, men den returnerer den ikke. Den vil da returnere None, og da sammenligner du None med en annen liste, som da vil gi deg False. Om du ønsker å returnere den sorterte listen så må denne lagres i en variabel."
     },
     {
-        "question": "",
+        "question": "sorted(set('Abkrakadabra')) gir hva som resultat?",
         "options": [
-            "",
-            "",
-            "",
-            ""
+            "{'Abrakadabra'}",
+            "['A', 'a', 'b', 'd', 'k', 'r']",
+            "['A', 'a', 'a', 'a', 'a', 'b', 'b', 'd', 'k', 'k', 'r', 'r']",
+            "{'A', 'a', 'b', 'd', 'k', 'r'}"
         ],
-        "answer": "",
-        "explanation": ""
+        "answer": "['A', 'a', 'b', 'd', 'k', 'r']",
+        "explanation": "Dette fordi set() vil returnere alle bokstavene separert og usortert. sorted() returnerer alle bokstavene sortert i en liste. "
     },
     {
-        "question": "",
+        "question": "listeA = ['Bergen', 'Oslo', 'Trondheim', 'Tromsø']\nlisteB = listeA.copy()\nNå er lA og lB\nVelg ett alternativ:",
         "options": [
-            "",
-            "",
-            "",
-            ""
+            "Ekvivalente, og kanskje identiske",
+            "Både ekvivalente og identiske",
+            "Ekvivalente, og ikke identiske",
+            "Hverken ekvivalente eller identiske"
         ],
-        "answer": "",
-        "explanation": ""
+        "answer": "Ekvivalente, og ikke identiske",
+        "explanation": "Dette fordi Ekvivalente betyr at variablene har samme verdi, som altså er sant fordi lB er en kopi av lA. De er ikke identiske fordi listene ikke tilhører det samme objektet i minnet. Dette kan bereftes ved å å bruke 'is': listeA is listeB = False"
     },
     {
-        "question": "",
+        "question": "x == y vil si at x og y er?",
         "options": [
-            "",
-            "",
-            "",
-            ""
+            "Ekvivalente, og ikke identiske",
+            "Ekvivalente, men ikke nødvendigvis identiske",
+            "Ekvivalente og identiske",
+            "Identiske, men ikke nødvendigvis ekvivalente"
         ],
-        "answer": "",
-        "explanation": ""
+        "answer": "Ekvivalente, men ikke nødvendigvis identiske",
+        "explanation": "== er sammenlignings operatoren som i dette tilfellet sjekker om x og y har samme verdi. == sjekker ikke om x og y er identiske, men det betyr ikke at de ikke er det."
     },
     {
-        "question": "",
+        "question": "x is y vil si at x og y er?",
         "options": [
-            "",
-            "",
-            "",
-            ""
+            "Identiske, men ikke nødvendigvis ekvivalente",
+            "Ekvivalente, og ikke identiske",
+            "Ekvivalente, men ikke nødvendigvis identiske",
+            "Ekvivalente og identiske"
         ],
-        "answer": "",
-        "explanation": ""
+        "answer": "Ekvivalente og identiske",
+        "explanation": "'is' sjekker om x og y er det samme objektet, og om de er det samme objektet så må de også ha samme verdi."
     },
     {
-        "question": "",
+        "question": "type(float) gir hva som resultat?",
         "options": [
-            "",
-            "",
-            "",
-            ""
+            "'float'",
+            "float",
+            "<class 'type'>",
+            "<class 'builtin_function_or_method'>"
         ],
-        "answer": "",
-        "explanation": ""
+        "answer": "<class 'type'>",
+        "explanation": "Her returneres <class 'type'> fordi float, på lik linje med int, bool, str, list, dict osv, er en datatype i Python"
     },
     {
-        "question": "",
+        "question": "type( lambda p, r: 2*p*r / (p + r)) gir hva some resultat?",
         "options": [
-            "",
-            "",
-            "",
-            ""
+            "<class 'function'>",
+            "<class 'str'>",
+            "<class 'builtin_function_or_method'>",
+            "<class 'type'>"
         ],
-        "answer": "",
-        "explanation": ""
+        "answer": "<class 'function'>",
+        "explanation": "type() er en innebygd funksjon i Python som returnerer typen til objektet du sender inn som argument. lambda() er en annen funksjon i Python, så uavhengig av hva som står inni lambda funksjonen, så vil type() alltid returnere <class 'function'>"
     },
     {
-        "question": "",
+        "question": "for i in range(1, 6, -1)",
         "options": [
-            "",
-            "",
-            "",
-            ""
+            "5 4 3 2 1",
+            "Ingenting - utskriften er tom",
+            "6 5 4 3 2",
+            "1 0 -1 -2 -3 -4"
         ],
-        "answer": "",
-        "explanation": ""
+        "answer": "Ingenting - utskriften er tom",
+        "explanation": "range() formatet er slik [start:stop:steg]. Siden start er mindre enn stop og steget går bakover, så vil utskriften bli blank fordi den ikk går over noen tall."
     },
     {
         "question": "",
